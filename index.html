@@ -58,15 +58,22 @@
       line-height: 1.6;
     }
 
-    Recanto-da-Elo-4_p7155_thumb_resized.jpeg{
-      text-align: center;
+    /* Estilos para a galeria de imagens */
+    .gallery {
+      display: flex; /* Usa Flexbox para organizar as imagens */
+      flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se não houver espaço */
+      justify-content: center; /* Centraliza as imagens horizontalmente */
+      gap: 20px; /* Espaço entre as imagens */
       margin-top: 2rem;
     }
 
-    Recanto-da-Elo-4_p7155_thumb_resized.jpeg {
-      max-width: 100%;
+    .gallery img {
+      width: 300px; /* Define uma largura fixa para todas as imagens */
+      height: 200px; /* Define uma altura fixa para todas as imagens */
+      object-fit: cover; /* Garante que a imagem preencha a área sem distorcer, cortando se necessário */
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block; /* Remove o espaço extra abaixo da imagem que pode ocorrer com inline */
     }
 
     footer {
@@ -101,31 +108,21 @@
     <section id="atividades" class="section">
       <h2>Atividades Desenvolvidas No Turismo.</h2>
       <ul>
-        <li>Hospedagem”.</li>
-        <li>Lazer e entreterimento na natureza.</li>
-        <li>Gastronomia rural, com comidas típicas com a culinaria caipira.</li>
+        <li>Hospedagem.</li>
+        <li>Lazer e entretenimento na natureza.</li>
+        <li>Gastronomia rural, com comidas típicas com a culinária caipira.</li>
         <li>Cultura e tradição.</li>
       </ul>
     </section>
 
     <section id="galeria" class="section">
       <h2>Galeria de Imagens</h2>
-      <div class="">
-        <img src="Recanto-da-Elo-4_p7155_thumb_resized.jpeg"Conexão do Campo e Cidade">
+      <div class="gallery"> <img src="Recanto-da-Elo-4_p7155_thumb_resized.jpeg" alt="Conexão do Campo e Cidade">
+        <img src="man-5697016_1280.jpg" alt="Conexão do Campo e Cidade">
+        <img src="A-onda-do-turismo-rural.jpeg" alt="Conexão do Campo e Cidade">
       </div>
     </section>
- <section id="galeria" class="section">
-      <h2>Galeria de Imagens</h2>
-      <div class="">
-        <img src="man-5697016_1280.jpg"Conexão do Campo e Cidade">
-      </div>
-    </section>
-  </div><section id="galeria" class="section">
-      <h2>Galeria de Imagens</h2>
-      <div class="">
-        <img src="A-onda-do-turismo-rural.jpeg"Conexão do Campo e Cidade">
-      </div>
-    </section>
+
   </div>
   <footer>
     <p>&copy; 2025 Projeto Agrinho – Todos os direitos reservados.</p>
